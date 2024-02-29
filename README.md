@@ -2,7 +2,7 @@
 Repositorio de retos y proyectos de Tópicos Especiales en Telemática 
 
 
-# info de la materia: ST0263 Tópicos Especiales en Telemática
+# Info de la materia: ST0263 Tópicos Especiales en Telemática
 #
 # Estudiante(s): Valentina Morales Villada, vmoralesv@eafit.edu.co
 #
@@ -11,7 +11,8 @@ Repositorio de retos y proyectos de Tópicos Especiales en Telemática
 
 # Reto 1 y 2 
 #
-# 1. Diseño e implementación de un sistema con arquitectura P2P, en el cual cada nodo tiene unos microservicios que soportan un sistema de compartición de archivos distribuido y descentralizado.
+# 1. Breve descripción de la actividad
+ Diseño e implementación de un sistema con arquitectura P2P, en el cual cada nodo tiene unos microservicios que soportan un sistema de compartición de archivos distribuido y descentralizado.
 #
 
 <texto descriptivo>
