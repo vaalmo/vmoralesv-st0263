@@ -1,19 +1,21 @@
 # vmoralesv-st0263
-Repositorio de retos y proyectos de Tópicos Especiales en Telemática 2024-1
+Repositorio de retos y proyectos de Tópicos Especiales en Telemática 
 
 
-# info de la materia: STxxxx <nombre>
+# info de la materia: ST0263 Tópicos Especiales en Telemática
 #
 # Estudiante(s): Valentina Morales Villada, vmoralesv@eafit.edu.co
 #
-# Profesor: Edwin Montoya, email-eafit
+# Profesor: Edwin Montoya, emontoya@eafit.edu.co
 #
 
 # Reto 1 y 2 
 #
 # 1. Diseño e implementación de un sistema con arquitectura P2P, en el cual cada nodo tiene unos microservicios que soportan un sistema de compartición de archivos distribuido y descentralizado.
 #
+
 <texto descriptivo>
+  
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
