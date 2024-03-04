@@ -28,7 +28,9 @@ Red P2P no estructurada basada en servidor central. En la cual cada proceso tien
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
-En general se pudo cumplir con lo propuesto en el enunciado del proyecto. Tal vez pudo faltar un mejor manejo de errores desde el servidor central.
+No se implementó MOM en tanto el profesor recomendó finalmente no hacerlo.
+No se hace la transferencia periódica del índice de archivos de manera independiente, sino que se transfiere cada que un peer realiza alguna acción dentro de la red, es decir, cuando hay alguna actualización.
+No se realizó lo relacionado con el peer titular y peer suplente, en tanto el profesor recomendó finalmente no hacerlo.
 
 # 2. Información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 
