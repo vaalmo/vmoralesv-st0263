@@ -115,6 +115,9 @@ Como ya fue mencionado las ip's se configuran en los archivos de _docker-compose
 
 ![image](https://github.com/vaalmo/vmoralesv-st0263/assets/83479274/c7463716-e39c-4cdb-8226-2cb85d4c2990)
 
+![image](https://github.com/vaalmo/vmoralesv-st0263/assets/83479274/ff265cb2-ff5b-48fa-b8d8-01217c0cf771)
+
+
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
@@ -130,7 +133,12 @@ Y para el servidor central fueron bastantes (se pueden consultar en el archivo r
 
 ## IP o nombres de dominio en nube o en la máquina servidor.
 
-IPS elásticas en AWS. No hubo necesidad de nombre de dominio.
+IPS elásticas en AWS, una para cada instancia. No hubo necesidad de nombre de dominio.
+
+central server: 44.215.7.251
+peer1: 3.227.190.85
+peer2: 3.94.164.105
+
 
 ## Como se lanza el servidor.
 
@@ -157,7 +165,7 @@ Debe correr, como ya antes mencionado en detalle, el central-server, el pserver 
 
 # 5. Otra información que considere relevante para esta actividad.
 
-# referencias:
+## Referencias:
 
 #### [grpc with python](https://www.youtube.com/watch?v=WB37L7PjI5k)
 #### [Install docker](https://docs.docker.com/compose/install/linux/)
