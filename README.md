@@ -95,12 +95,12 @@ El servidor central fue desarrollado en Golang y tanto el PCliente como el PServ
 
 Endpoints:  
 
-- /api/v1/login
-- /api/v1/logout
-- /api/v1/sendIndex
-- /api/v1/indexTable
-- /api/v1/query
-- /api/v1/getPeerUploading
+- /login
+- /logout
+- /sendIndex
+- /indexTable
+- /query
+- /getPeerUploading
 
 
 
@@ -128,11 +128,11 @@ requests==2.28.1
 
 Y para el servidor central fueron bastantes (se pueden consultar en el archivo requirements.txt del central-server)
 
-# IP o nombres de dominio en nube o en la máquina servidor.
+## IP o nombres de dominio en nube o en la máquina servidor.
 
 IPS elásticas en AWS. No hubo necesidad de nombre de dominio.
 
-## como se lanza el servidor.
+## Como se lanza el servidor.
 
 Solo basta con hacer en la máquina luego de clonar el repositorio.
 
@@ -142,21 +142,20 @@ docker compose up
 ```
 
 
-## una mini guia de como un usuario utilizaría el software o la aplicación
+## Una mini guía de como un usuario utilizaría el software o la aplicación
 
 Debe correr, como ya antes mencionado en detalle, el central-server, el pserver del peer1, el pserver del peer2 y los dos pclientes para probar el programa con sus microservicios.
 
 
-## opcionalmente - si quiere mostrar resultados o pantallazos 
+## Opcionalmente - si quiere mostrar resultados o pantallazos 
 
 ![screenshot 2024-03-04](https://github.com/vaalmo/vmoralesv-st0263/assets/83479274/aeae9edd-1d41-41fb-aa2b-356044c14991)
 
 ![image](https://github.com/vaalmo/vmoralesv-st0263/assets/83479274/9ec17571-216d-40c9-a785-17568f8d53ab)
 
-![image](https://github.com/vaalmo/vmoralesv-st0263/assets/83479274/7157e6a2-c983-4ca4-9c04-d3490bae6498)
 
 
-# 5. otra información que considere relevante para esta actividad.
+# 5. Otra información que considere relevante para esta actividad.
 
 # referencias:
 
