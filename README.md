@@ -33,7 +33,7 @@
 
 ### Mejores Prácticas
 
-- Distribución modular: 
+- Distribución modular: El sistema se organizó de tal manera que todos los servicios y módulos de clientes y server grpc, tuvieran su propio archivo y carpeta, para que sea más fácil localizar los archivos a la hora de hacer cambios.
 - Escalabilidad horizontal: Esto nos permite agregar tantos peers como queramos fácilmente.
 - Gestión de configuraciones: Toda la información sensible como ips o puertos quedó guardada en un archivo de configuración y no quemada dentro del código.
 - Tolerancia a fallos: 
