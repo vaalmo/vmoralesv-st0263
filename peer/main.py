@@ -112,7 +112,7 @@ if __name__ == "__main__":
             querydata = query_procedure()
             error, query_response = client.do_download(client.url_servidor, querydata, authToken)
             if error:
-                print(query_response['message'])
+                print(query_response)
             else:
                 sent_index_files = setup.do_sendIndex(client.url_servidor, [querydata['filename']], authToken)
                 print(query_response)
@@ -123,7 +123,7 @@ if __name__ == "__main__":
             querydata = upload_procedure()
             error, query_response = client.do_upload(client.url_servidor, querydata, authToken)
             if error:
-                print(query_response['message'])
+                print(query_response)
             else: 
                 print(query_response)
 
