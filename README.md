@@ -41,6 +41,7 @@ En general se pudo cumplir con lo propuesto en el enunciado del proyecto. Tal ve
 - Escalabilidad horizontal: Esto nos permite agregar tantos peers como queramos fácilmente.
 - Gestión de configuraciones: Toda la información sensible como ips o puertos quedó guardada en un archivo de configuración y no quemada dentro del código.
 - Tolerancia a fallos: Esto ayudó a que cuando surgieran errores, no se muriera el código, sino que mandara mensaje de error y pudiera seguir corriendo.
+- KISS and DRY
 
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
@@ -94,14 +95,14 @@ El servidor central fue desarrollado en Golang y tanto el PCliente como el PServ
 ## Detalles técnicos
 
 Endpoints:  
-
+```
 - /login
 - /logout
 - /sendIndex
 - /indexTable
 - /query
 - /getPeerUploading
-
+```
 
 
 ## Descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
@@ -122,23 +123,23 @@ Como ya fue mencionado las ip's se configuran en los archivos de _docker-compose
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 Se utilizó Python para el desarrollo del PClient y el PServer y Golang para el servidor central. En cuanto a las librerias, se usaron principalmente para los peers: 
-
+```
 grpcio==1.62.0
 grpcio-tools==1.62.0
 protobuf==4.25.3
 python-dotenv==1.0.1
 requests==2.28.1
-
+```
 Y para el servidor central fueron bastantes (se pueden consultar en el archivo requirements.txt del central-server)
 
 ## IP o nombres de dominio en nube o en la máquina servidor.
 
 IPS elásticas en AWS, una para cada instancia. No hubo necesidad de nombre de dominio.
-
+```
 central server: 44.215.7.251
 peer1: 3.227.190.85
 peer2: 3.94.164.105
-
+```
 
 ## Como se lanza el servidor.
 
@@ -152,7 +153,15 @@ docker compose up
 
 ## Una mini guía de como un usuario utilizaría el software o la aplicación
 
-Debe correr, como ya antes mencionado en detalle, el central-server, el pserver del peer1, el pserver del peer2 y los dos pclientes para probar el programa con sus microservicios.
+Debe correr, como ya antes mencionado en detalle, el central-server, el pserver del peer1, el pserver del peer2 y los dos pclientes.
+
+Una vez se hayan creado y ejecutado los contenedores en docker el usuario tendra acceso a todos los servicios disponibles en el cliente, a continuación se incluye una imagen del menu principal del CLI:
+
+![image](https://github.com/vaalmo/vmoralesv-st0263/assets/83479274/90bb43c4-5bad-4ad8-bd7a-61022ae14475)
+
+Para utilizar cualquier servicio bastara con que que el usuario ingrese por terminal el numero que le corresponde.
+Una vez selecionado el servicio, el programa le preguntara por mas informacion adicional en caso de ser requerido (ej. Archivo a descargar).
+Una vez se complete la operacion dentro del servicio el programa volvera a su menu principal en la que el ususario podra elegir su propia operación.
 
 
 ## Opcionalmente - si quiere mostrar resultados o pantallazos 
@@ -167,9 +176,9 @@ Debe correr, como ya antes mencionado en detalle, el central-server, el pserver 
 
 ## Referencias:
 
-#### [grpc with python](https://www.youtube.com/watch?v=WB37L7PjI5k)
-#### [Install docker](https://docs.docker.com/compose/install/linux/)
-#### url de donde tomo info para desarrollar este proyecto
+#### MissCoding. (2022, 9 mayo). Python gRPC Tutorial - Create a gRPC Client and Server in Python with Various Types of gRPC Calls [Vídeo]. YouTube. https://www.youtube.com/watch?v=WB37L7PjI5k
+#### «Install Docker Engine on Ubuntu». (2024, 31 enero). Docker Documentation. https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
 
 #### Video
 
