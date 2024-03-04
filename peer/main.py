@@ -142,7 +142,7 @@ if __name__ == "__main__":
         elif action == "5":
             error, logout_response = client.logOut(client.url_servidor, authToken)
             if error:
-                print(logout_response['message'])
+                print(logout_response)
             else:
                 print(logout_response['message'])
             break
